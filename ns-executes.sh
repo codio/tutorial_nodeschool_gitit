@@ -44,7 +44,7 @@ learnyounode select $STR > /dev/null
 
 # Run or Verify?
 if [ $1 == "run" ]; then
-    learnyounode run $3/$2.js
+    get_git run $3/$2.js
 elif [ $1 == "verify" ]; then
     learnyounode verify $3/$2.js
 else 
