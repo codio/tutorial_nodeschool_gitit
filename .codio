@@ -3,10 +3,10 @@
 
   // Run button configuration
   "commands": { 
-    "Install Learnyounode" : "npm install -g learnyounode",    
+    "Install Git-It" : "npm install -g git-it",    
     "Run Lesson" : "./ns-executes.sh run {{filename_no_ext}} {{path}}",
     "Verify Lesson" : "./ns-executes.sh verify {{filename_no_ext}} {{path}}",
-    "Completed Lessons" : "learnyounode",
+    "Completed Lessons" : "git-it",
     "Run with Node" : "node {{filepath}} 3 4 5"
   }
 }
