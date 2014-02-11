@@ -11,7 +11,7 @@ Git isn't like other programs on your computer. You'll likely not see an icon on
   
 Once it is installed, open terminal (aka Bash, aka Shell, aka Prompt). You can verify that it's really there by typing:
   
-  $ git -v 
+    $ git -v 
   
 This will return the version of Git that you're running.
   
@@ -24,15 +24,15 @@ For completeness, here are the instructions if you are not signed into Codio wit
 
 Set your name:
   
-  $ git config --global user.name "Your Name"
+    $ git config --global user.name "Your Name"
   
 Now set your email:
 
-  $ git config --global user.email youremail@example.com
+    $ git config --global user.email youremail@example.com
 
 When you're done type into terminal:
 
-  $ git-it verify 
+    $ git-it verify 
 
 **PRO TIP**: Dollar signs are often used in programming documentation to signify that the line is command line code. You don't actually type it in, though, only type `git-it verify`.
   
@@ -55,38 +55,38 @@ You can type all of this here in your terminal window.
   
 To make a new folder:
   
-  $ mkdir sandwich
+    $ mkdir sandwich
   
 To go into that folder:
   
-$ cd sandwich
+    $ cd sandwich
   
 To create a new Git instance for a project:
 
-  $ git init
+    $ git init
 
 That's it! It will just return you to a new line.
   
 When you've initialized a new Git repository, run:
   
-  $ git-it verify
+    $ git-it verify
   
 ###TERMINAL TIPS
 Make a new folder (aka directory)
 
-  $ mkdir <FOLDERNAME>
+    $ mkdir <FOLDERNAME>
 
 Navigate into an existing folder (aka change directory)
 
-  $ cd <FOLDERNAME>
+    $ cd <FOLDERNAME>
 
 List the items in a folder
 
-  $ ls 
+    $ ls 
   
 Turn Git on for a folder
 
-  $ git init
+    $ git init
 
 @annotation:tour commit_to_it 
 #3. Commit to It
@@ -101,22 +101,22 @@ Open a text editor. Now write a couple of lines of text, perhaps describe the ta
 ##Check, Add and Commit Changes
 Next check the **status** of your repository. Below in this terminal, you should still be within the new folder you created. See if there are changes listed:
   
-  $ git status
+    $ git status
 
 Then **add** the file you just created to the files you'd like to **commit** (aka save) to change (for instance, if your file is named readme.md, `git add readme.md`). 
   
-  $ git add <FILENAME>
+    $ git add <FILENAME>
 
 Finally, **commit** those changes to the repository's history with a short description of the updates.See the command hints below!
   
-  $ git commit -m "your commit message"
+    $ git commit -m "your commit message"
   
 ###Make More Changes  
 Now add another line to your .txt file, perhaps a title, and save.
   
 In terminal, you can view the **diff**erence between the file now and how it was at your last commit. 
   
-  $ git diff
+    $ git diff
   
 Now with what you just learned above, commit this latest change.
   
@@ -125,23 +125,23 @@ When all changes are committed, run `git-it verify`.
 ##Git Tips
 Check status of changes to a repository
 
-  $ git status
+    $ git status
   
 View changes to files
 
-  $ git diff
+    $ git diff
 
 Add a file's changes to be commited
 
-  $ git add <FILENAME>
+    $ git add <FILENAME>
 
 To add all files' changes
 
-  $ git add .
+    $ git add .
 
 To commit (aka save) the changes you've added with a short message describing the changes
 
-  $ git commit -m "your commit message"{/cyan}
+    $ git commit -m "your commit message"{/cyan}
 
 
 @annotation:tour githubbin
@@ -160,7 +160,7 @@ You can also add your GitHub username to your Git configuration, which will be n
 
 Add your GitHub username to your configuration:
   
-  $ git config --global user.username githubusername
+    $ git config --global user.username githubusername
 
 When you've set everything up, run `git-it verify`
 
@@ -199,13 +199,13 @@ Now you've got an empty repository started on GitHub.com. At the top you'll see 
 
 Back in your terminal, and inside of the folder that you initialized as a Git repository in the previous challenge, you want to tell Git the location of the remote version. This is commonly named `origin`.
 
-  $ git remote add origin <URLFROMGITHUB>
+    $ git remote add origin <URLFROMGITHUB>
 
 A note:
 
 If you have GitHub for Windows on your computer, a remote named 'origin' is automatically created. In that case, you'll just need to tell it what URL to associate with origin. Use this command instead of the 'add' one above:
 
-  $ git remote set-url origin <URLFROMGITHUB>
+    $ git remote set-url origin <URLFROMGITHUB>
 
 Your **local** version is now connected to the **remote** on GitHub.com.
 
@@ -215,7 +215,7 @@ Next you want to **push** everything you've done locally to GitHub.
 
 Git has a branching system so that you can work on different parts of a project at different times. By default the first branch is named master. When you push (and later pull) from a project, you tell Git the branch name you want and the name of the remote that it lives on.
 
-  $ git push origin master
+    $ git push origin master
 
 For a visual on how branches work in a project, see this GitHub Guide: [guides.github.com/overviews/flow/](http://guides.github.com/overviews/flow/) 
 
@@ -223,33 +223,33 @@ Now go to GitHub and refresh the page of your repository. WOAH! Everything is th
 
 When you're synced locally and on GitHub.com, run:
 
-  $ git-it verify
+    $ git-it verify
 
 ##GIT TIPS
 Add remote connections
 
-  $ git remote add <REMOTENAME> <URL>
+    $ git remote add <REMOTENAME> <URL>
 
 Set a URL to a remote
 
-  $ git remote set-url <REMOTENAME> <URL>
+    $ git remote set-url <REMOTENAME> <URL>
 
 Pull in changes
 
-  $ git pull <REMOTENAME> <BRANCHNAME>
+    $ git pull <REMOTENAME> <BRANCHNAME>
 
 View remote connections
 
-  $ git remote -v
+    $ git remote -v
 
 Push changes
 
-  $ git push <REMOTENAME> <BRANCH>
+    $ git push <REMOTENAME> <BRANCH>
 
 
 
-@annotation:tour forks_and_branches
-#6. Forks and Branches
+@annotation:tour forks_and_clones
+#6. Forks and Clones
 ##Challenge
 Fork a project from GitHub.com and clone it locally.
   
@@ -265,11 +265,11 @@ The project we'll work with is **www.github.com/jlord/patchwork**. Go to that si
 ##Clone a Repository
 Now, in terminal, clone the repository. It will create a new folder for the repository so no need to create one. But make sure you aren't cloning it inside of another Git repository folder! So, if you're still inside of the repository you created in the early challenges, back out of that folder: `cd ..`
 
-  $ git clone <URL>
+    $ git clone <URL>
 
 Navigate into that folder (in this case, named 'patchwork')
 
-  $ cd patchwork
+    $ cd patchwork
 
 Now you've got a copy of the repository on your computer and it is automatically connected to the remote repository (your forked copy) on your GitHub account.
 
@@ -278,26 +278,26 @@ But what if the original repository you forked changes? You'll want to be able t
 
 You can name this remote connection anything you want, but often people use 'upstream', let's use that for this. 
 
-  $ git remote add upstream https://github.com/jlord/patchwork.git
+    $ git remote add upstream https://github.com/jlord/patchwork.git
   
 When you've done these steps, run `git-it verify`.
   
 ##GIT TIPS
-**Add remote connections**
+Add remote connections
 
-  $ git remote add <REMOTENAME> <URL>
+    $ git remote add <REMOTENAME> <URL>
   
-**View remote connections**
+View remote connections
 
-  $ git remote -v{/cyan}
+    $ git remote -v{/cyan}
 
 
-@annotation:tour Branches aren't just for birds
+@annotation:tour branches_arent_just_for_birds
 #7. Branches aren't just for birds
 ##Challenge
 Create a new branch for your contribution.
 
-Git repositories use branches to isolate work when needed. It's common practice when working on a project or with others on a project to create a {bold}branch{/bold} to put your changes in. This way you can do your work while the main, commonly named 'master', branch stays stable.
+Git repositories use branches to isolate work when needed. It's common practice when working on a project or with others on a project to create a **branch** to put your changes in. This way you can do your work while the main, commonly named 'master', branch stays stable.
 
 ##GitHub Pages
 GitHub.com will automatically serve and host static website files in branches named 'gh-pages'. Since the project you forked creates a website, its main branch is 'gh-pages'. All sites like this can be found using this pattern for the URL: 
@@ -311,13 +311,13 @@ Type `git status` to see what branch you're currently on (it should be `gh-pages
 
 Create a branch and name it "add-<username>", where 'username' is your username. For instance, "add-jlord". 
 
-  $ git branch <BRANCHNAME>
+    $ git branch <BRANCHNAME>
 
 Now you have a branch with a new name identical to 'gh-pages'.
 
-To go into that branch and work on it, similar to using `cd` to change directory in terminal, you {bold}checkout{/bold} a branch.
+To go into that branch and work on it, similar to using `cd` to change directory in terminal, you **checkout** a branch.
 
-  $ git checkout <BRANCHNAME>
+    $ git checkout <BRANCHNAME>
 
 ##Create a new file
 Back to the text editor. In the 'contributors' folder, create a new file named "add-<username>.txt", where 'username' is your username. For instance, "add-jlord.txt". Then, just write your GitHub username in it, that's it and that's all. For instance, I'd type 'jlord' and hit save.  
@@ -325,13 +325,13 @@ Back to the text editor. In the 'contributors' folder, create a new file named "
 ##Check-in
 Go through the steps for checking in a project: 
 
-  $ git status
-  $ git add <filename>
-  $ git commit -m "commit message"
+    $ git status
+    $ git add <filename>
+    $ git commit -m "commit message"
 
 Now push your update to your fork on GitHub:
 
-  $ git push origin <BRANCHNAME>
+    $ git push origin <BRANCHNAME>
 
 Type `git-it verify` when you're done.
 
@@ -340,27 +340,27 @@ Type `git-it verify` when you're done.
 
 You can create and switch to a branch in one line:
 
-  $ git checkout -b <BRANCHNAME>
+    $ git checkout -b <BRANCHNAME>
 
 Create a new branch:
 
-  $ git branch <BRANCHNAME>
+    $ git branch <BRANCHNAME>
 
 Move onto a branch:
 
-  $ git checkout <BRANCHNAME>
+    $ git checkout <BRANCHNAME>
 
 List the branches:
 
-  $ git branch
+    $ git branch
 
 Rename a branch you're currently on:
 
-  $ git branch -m <NEWBRANCHNAME>
+    $ git branch -m <NEWBRANCHNAME>
 
 Verify what branch you're working on
 
-  $ git status{/cyan}
+    $ git status{/cyan}
 
 
 @annotation:tour its_a_small_world
@@ -371,45 +371,45 @@ Add a collaborator.
 Working with others is one of the best things about GitHub because it makes it easy to work from all over the world at any time.
 
 ###Collaborators
-{bold}Collaborators{/bold} are other GitHub users who are given permission to make edits to a repository owned by someone else. To add {bold}collaborators{/bold} to a project, visit the repository's GitHub page 
+**Collaborators** are other GitHub users who are given permission to make edits to a repository owned by someone else. To add **collaborators** to a project, visit the repository's GitHub page 
 and click the 'Settings' icon on the right side menu. Then select the 'Collaborators' tab. Type in the username to add and click 'Add'.
 
 ##Hello, Repo Robot!
 Go to the your forked Patchwork repository's page on GitHub and add 'reporobot' as a collaborator.
 
-  http://www.github.com/yourusername/patchwork
+    http://www.github.com/yourusername/patchwork
 
 When you've added Reporobot as a collaborator to your Patchwork fork, run `git-it verify`. 
 
 ##GIT TIPS
 Pull in changes from a remote
 
-  $ git pull <REMOTENAME> <BRANCH>
+    $ git pull <REMOTENAME> <BRANCH>
 
 Copy a repository to your computer
 
-  $ git clone <URL>
+    $ git clone <URL>
 
 Add remote connections
 
-  $ git remote add <REMOTENAME> <URL>
+    $ git remote add <REMOTENAME> <URL>
 
 View remote connections
 
-  $ git remote -v{/cyan}
+    $ git remote -v{/cyan}
 
 
-@annotation:tour Pull never out of date
-#9. Hello World
+@annotation:tour pull_never_out_of_date
+#9. Pull never out of date
 ##Challenge
 Keep your file up to date, pull in changes from collaborators.
 
-If you're working on something with someone you need to stay up to date with the latest version. So you'll want to {bold}pull{/bold} in any changes that may have been made.
+If you're working on something with someone you need to stay up to date with the latest version. So you'll want to **pull** in any changes that may have been made.
 
 ##Pull in Changes
 See if Reporobot has made any changes to your 'add-' branch by pulling in from the remote named 'origin' on GitHub:
 
-  $ git pull <REMOTENAME> <BRANCHNAME>
+    $ git pull <REMOTENAME> <BRANCHNAME>
 
 If nothing's changed, it will tell you 'Already up-to-date'. If there are changes, it will merge those changes into your local version.
 
@@ -420,15 +420,15 @@ When you've pulled, type `git-it verify`.
 ##GIT TIPS
 Check Git status
 
-  $ git status
+    $ git status
 
 Pull in changes from a remote branch
 
-  $ git pull <REMOTENAME> <REMOTEBRANCH>{/cyan}
+    $ git pull <REMOTENAME> <REMOTEBRANCH>{/cyan}
 
 See changes to the remote before you pull in
 
-  $ git fetch --dry-run{/cyan}
+    $ git fetch --dry-run{/cyan}
 
 
 @annotation:tour requesting_you_pull_please
@@ -436,13 +436,13 @@ See changes to the remote before you pull in
 ##Challenge
 Submit a Pull Request.
 
-When you make changes and improvements to a project you've forked, often you'll want to (and have intended to from the get-go) send those changes to the maintainer of the original and {bold}request{/bold} that they {bold}pull{/bold} the changes into the original so that everyone can benefit from the updates - that's a {bold}pull request{/bold}.
+When you make changes and improvements to a project you've forked, often you'll want to (and have intended to from the get-go) send those changes to the maintainer of the original and **request** that they **pull** the changes into the original so that everyone can benefit from the updates - that's a **pull request**.
 
-We want to add you to the list of workshop finishers, so make a {bold}pull request{/bold} to the original: {bold}www.github.com/jlord/patchwork{/bold}.
+We want to add you to the list of workshop finishers, so make a **pull request** to the original: **www.github.com/jlord/patchwork**.
 
 ##Create a pull request
 
-- visit the original repository you forked on GitHub, in this case {bold}http://www.github.com/jlord/patchwork{/bold}
+- visit the original repository you forked on GitHub, in this case **http://www.github.com/jlord/patchwork**
 
 Often GitHub will detect if you've pushed a branch to a fork and display it at the top of the original's website. If you see that, you can click Create Pull Request. If not:
 
@@ -460,7 +460,7 @@ If everything good, and as you expect it:
 
 High five! When you've submitted your pull request, take a few seconds to bask in the moment. Then see if your pull request is merged right before your eyes! If it is, you're golden, run:
 
-  $ git-it verify
+    $ git-it verify
 
 If it's not merged automatically within a few moments, you'll then likely have some comments from Reporobot on why it couldn't merge it. If so, close your pull request on GitHub.com, make the necessary
 changes to your branch, push those changes and resubmit your pull request.
@@ -476,19 +476,19 @@ Your pull request is being merged! But meanwhile, since you know that you defini
 ##Merge a branch
 First, move into the branch you want to merge *into* (in this case, branch `gh-pages`).
 
-  $ git checkout <BRANCHNAME>
+    $ git checkout <BRANCHNAME>
 
 Now tell Git what branch you want to merge in (in this case, your feature branch that begins with "add-").
 
-  $ git merge <BRANCHNAME>
+    $ git merge <BRANCHNAME>
 
 Tidy up by deleting your feature branch now that it has been merged.
 
-  $ git branch -D <BRANCHNAME>
+    $ git branch -D <BRANCHNAME>
 
 You can also delete the branch from your fork on GitHub:
 
-  $ git push <REMOTENAME> --delete <BRANCHNAME>
+    $ git push <REMOTENAME> --delete <BRANCHNAME>
 
 ##Congratulations!
 You've created local repositories, remote repositories, worked with a collaborator, pushed, pulled and joined the millions of others developing and enriching open source!
@@ -497,7 +497,7 @@ Visit [jlord.github.io/patchwork](http://jlord.github.io/patchwork) to see your 
 
 And last but not least, if you pull in updates from the original (since it now shows you on the home page) you'll be up to date and have a version too, live at: yourusername.github.io/patchwork. 
 
-  $ git pull upstream gh-pages
+    $ git pull upstream gh-pages
 
 When you've mereged your branch, deleted it and pulled form the original, run `git-it verify`.
 
@@ -505,21 +505,21 @@ When you've mereged your branch, deleted it and pulled form the original, run `g
 
 Merge a branch into current branch
 
-  $ git merge <BRANCHNAME>
+    $ git merge <BRANCHNAME>
 
 Change the branch you're working on
 
-  $ git checkout <BRANCHNAME>
+    $ git checkout <BRANCHNAME>
 
 Delete a local branch
 
-  $ git branch -D <BRANCHNAME>
+    $ git branch -D <BRANCHNAME>
 
 Delete a remote branch
 
-  $ git push <REMOTENAME> --delete <BRANCHNAME>
+    $ git push <REMOTENAME> --delete <BRANCHNAME>
  
 Pull from a remote branch
 
-  $ git pull <REMOTENAME> <BRANCHNAME>{/cyan}
+    $ git pull <REMOTENAME> <BRANCHNAME>{/cyan}
 

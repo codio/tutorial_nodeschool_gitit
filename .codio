@@ -4,9 +4,7 @@
   // Run button configuration
   "commands": { 
     "Install Git-It" : "npm install -g git-it",    
-    "Run Lesson" : "./ns-executes.sh run {{filename_no_ext}} {{path}}",
-    "Verify Lesson" : "./ns-executes.sh verify {{filename_no_ext}} {{path}}",
-    "Completed Lessons" : "git-it",
-    "Run with Node" : "node {{filepath}} 3 4 5"
+    "Verify Lesson" : "cd ~/workspace/{{path}} && git-it verify",
+    "Completed Lessons" : "git-it"
   }
 }

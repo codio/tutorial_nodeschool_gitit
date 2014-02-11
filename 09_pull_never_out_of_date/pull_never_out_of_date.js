@@ -1,9 +1,14 @@
 // @annotation:tour pull_never_out_of_date
 // 
-// <-- click the blue icon in the gutter 
-//     for instructions on this lesson
+// Git-It has a different format to other Nodeschool.io
+// tutorials. You don't write code, you use the terminal
 // 
-// The README.md file contains complete instructions
-// for using these tutorials.
-// Then just start coding away in this file
-
+// Open up a Terminal window (Tools menu) then get 
+// instructions in either of the following ways
+// 
+// 1. Select the Tools->Tutorial menu option
+// 2. Click the blue icon in the gutter
+//
+// When you're done, use the Terminal to run 'git-it verify' 
+// 
+// 
