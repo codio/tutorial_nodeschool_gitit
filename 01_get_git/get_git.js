@@ -8,7 +8,10 @@
 // 
 // 1. Select the Tools->Tutorial menu option
 // 2. Click the blue icon in the gutter
-//
-// When you're done, use the Terminal to run 'git-it verify' 
+// 
+// 
+// When you're done, use the Terminal to run 'git-it' to 
+// access and select the appropriate lesson and then run
+// 'git-it verify' to verify the lesson
 // 
 // 

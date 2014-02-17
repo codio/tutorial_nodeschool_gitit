@@ -3,8 +3,6 @@
 
   // Run button configuration
   "commands": { 
-    "Install Git-It" : "npm install -g git-it",    
-    "Verify Lesson" : "cd ~/workspace/{{path}} && git-it verify",
-    "Completed Lessons" : "git-it"
-  }
+    "Install Git-It" : "npm install -g git-it"   
+      }
 }

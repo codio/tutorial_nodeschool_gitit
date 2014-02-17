@@ -1,71 +1,67 @@
-# Git-it
+[![nodeschool-logo](stuff/nodeschool.png)](http://nodeschool.io)
+#Tutorial 05 - Git-it
+**Learn Git and GitHub basics.**
 
-![ss](https://raw2.github.com/jlord/git-it/master/git-it-ss.png) 
+*All content is written and produced by [http://nodeschool.io](http://nodeschool.io). Please see the credits at the bottom of this page and if you have learnt a lot from these tutorials, please make a donation (also at the bottom).*
 
-A [workshopper](https://github.com/rvagg/workshopper) module for learning Git and GitHub - Social coding, y'all. These modules run a little app in your terminal and users work their way through the challenges. See [nodeschool.io](http://nodeschool.io) for more.
+#Video
+If you prefer a video rather than reading the instructions below, there is a video that runs through the Codio + Nodeschool.io system (yes, it's a tutorial on how to use the tutorial) : [https://vimeo.com/86100550](https://vimeo.com/86100550)
 
-**For developer documentation, see [dev-doc.md](#).**
+#Installation
+1. Create an account with http://codio.com (don't be frightened, it's free for all public projects).
+1. You're probably looking at this in GitHub already but if not, go to [https://github.com/codio](https://github.com/codio) and search for "Nodeschool", then select the tutorial you want.
+2. Copy the SSH or HTTPS url from beneath al the GitHub settings on the right hand side (NOT the main browser page url).
+3. Go to [Create Project](https://codio.com/s/docs/console/creating/) in your Codio Dashboard, select the Git tab and paste in the url you just copied.
+4. Press Create Project and you'll be in the IDE with your tutorial project ready and waiting.
 
-## Hello, future Forkers, Branchers and Pull Requesters! 
+You'll now need to install the Nodeschool tutorial (each one is an npm package) onto your project's Box. There are two ways to do this ...
 
-This app runs in your Terminal (Mac) or Bash (Windows) and has challenges for learning Git and GitHub. It uses the _real_ terminal (so you'll be learning the awesome command line), it uses _real_ Git and GitHub which means when you finish all of the challenges you'll have _real_ repositories on your GitHub account and green squares on your [contribution chart](https://github.com/blog/1360-introducing-contributions).
-
-![contributions](https://raw2.github.com/jlord/git-it/master/ghcc.png)
-
-#### What you'll need to run this:
-
-_A few development essentials, all are free and/or free and open source._
-
-- **Git**, this is your tracker of changes! If you're on Windows, download the free [GitHub for Windows](http://windows.github.com), which includes Git, and use the Git Shell for your terminal. If you're on a Mac you can download [GitHub for Mac](http://mac.github.com) (from Preferences, install the command line tool) or standalone [Git](http://git-scm.com/downloads).
-- **Node.js**, this is what this app is written in so you'll need this to run it. It's an engine for running JavaScript on servers (your computer is a server!) and will live quietly in the background. You can download it [here](http://nodejs.org/download/) (For most, you can just pick the Windows .msi or Mac .pkg option).
-- **Editor**, if you don't have one already, you'll need a text editor for editing code. A few options: [Sublime Text](http://www.sublimetext.com/2), [Textmate](http://macromates.com/download), [Brackets](http://brackets.io/).
-
-#### Install Git-it
-
-Once you have the essentials above, install Git-it. 
-
-- Open up a terminal window and install Git-it globally on your computer (so that you can run it from anywhere). [NPM](http://www.npmjs.org) delievers Node.js modules (that's what this app is) to your computer from the command line, real easy like (it is included when you install Node.js):
-
-```bash
-$ npm install -g git-it
-```
-- Once it's done installing components, you can run it:
-- _If you run into trouble with this command it may be due to permissions on your computer, try adding 'sudo':_ `sudo npm install -g git-it`
-
-```bash
-$ git-it
-```
-- This should load the menu. You're ready to go! 
-
-#### How it Works
-
-- Use the arrows to select the first challenge and press 'Enter'. 
-- Read the challenge text, do as it says and when you're done type `git-it verify` to see if you've compelted the challenge correctly.
-- If the challenge components were not completed correctly, Git-it returns some text to help you know what went wrong.
-- For some challenges you'll need to open new terminal windows and then run Git-it inside the window you've just opened. Git-it can run from any  (or mutiple) terminal windows and always saves your completed status. You'll need to run it from where you're doing your Git work, so it's OK to move around like that.
-- Scroll up! When the challenge loads, it scrolls to the bottom. Scroll up to the top of the challenge to not miss steps.
-
-**If you have any questions about something, just create a [new issue](https://github.com/jlord/git-it/issues/new).**
-
-#### Tips
-
-**Code snippets** often times look like `$ some code-stuff --here`. The dollar sign identifies the line as one a user would enter into the the command line, but you don't actually include it when you type it into terminal. In this case, you'd actually just type `some code-stuff --here`.
-
-**Variables** are indicated by `<VARIABLENAME>` in code snippets. When you actually use the line of code, replace it, including the <>, with your variable. For instance to make a new folder in terminal the format is, `mkdir <FOLDERNAME>`, so if you wanted to make a folder named 'octocat', you'd type: `mkdir octocat`.
-
-**Command line, terminal, bash** all basically mean the same thing: the MS-DOS, Doogie Howser looking screen full of words and numbers. It's awesomely powerful. You can do a lot of things from your terminal like delete, rename, copy or create files and folders; run scripts and send things back and forth between servers (like the ones storing things on GitHub.com) and your computer (also a server!).
+- Hands Dirty: open up a Terminal with from the 'Tools->Terminal' menu, then enter `npm install -g git-it@latest`.
+- Lazy Way: click on the "Install Git-it" menu item. Once installed, you can close that tab.
 
 
-#### Topics Covered in Git-it
+#2 Writing your code
+There are two different ways you can use Codio to run the Nodeschool.io tutorials. You can switch between them at any time. The great thing is that your code is neatly organized into lessons that you can refer back to later.
 
-- Basic **command line** such as: cd, mkdir
-- Creating a **local repository**
-- Checking **status**, **adding** and **committing** changes
-- Creating **remote repositories** on GitHub.com
-- **Forking** repositories
-- **Connecting local repositories to remote ones** on GitHub.com
-- **Pushing** and **pulling** to sync changes to GitHub.com
-- Creating **branches** for features/changes
-- Adding and working with a **collaborator** (Hi, @reporobot!)
-- Creating a **pull request**
-- **Merging** and **deleting** branches
+- **Tutorial Mode** : select the 'Tools->Tutorial' menu item. Each lesson is presented with a Code window on the left and the instructions on the right, which can be scrolled through and left in place while you code. You can navigate between lessons using the buttons above the instructions.
+- **Manual Mode** : open up the lessons folders and you will see a filename similar to the folder name. As this tutorial is all done in the terminal simply click on the blue icon in the gutter to open up the instructions popup.
+
+
+#Testing your code
+Git-It has a different format to other Nodeschool.io tutorials. You don't write code, you use the terminal
+
+###1. Shell out to the Terminal
+You can open a Terminal window at any time by selecting the 'Tools->Terminal' menu item. Your terminal defaults to the `~/workspace` folder, which equates to the root of your Codio code project. It is here that you enter your commands
+
+#Verifying your code
+Once you think you have completed the challenge, enter `git-it` to view the Lesson menu. Use your arrow keys to select the appropriate lesson and <enter>. 
+
+Then enter `git-it verify`. The output will be shown in the console window. If is passes, you will see something like this
+
+![Passed](stuff/passed.png)
+
+#Which lessons have I successfully completed?
+As you verify and pass each lesson (or by entering `git-it` in the command line at any time, you will be shown in the console the list of all challenges that are already completed. You will see the following screen in the Terminal window hat appears. Completed lessons are clearly marked on the right.
+
+![Passed](stuff/completed.png)
+
+#Doing everything from the command line
+For this tutorial, you do everything from the command line rather than using Codio. Just open up the Terminal window from 'Tools->Terminal'.
+
+#Other Tutorials
+[http://nodeschool.io](http://nodeschool.io) has a several excellent tutorials. We have packaged these up so they run within Codio and the full set can be found on our [Nodeschool Tutorial page.](http://codio.com/tutorials)
+
+#Credits
+![Nodeschool](http://nodeschool.io/images/nodeschool.png)
+
+The Nodeschool tutorials are the much excellent work of the following hackers
+
+Rod Vagg ([github/rvagg](https://github.com/rvagg), [twitter@rvagg](http://twitter.com/rvagg)), 
+Andrey Sidorov ([github/sidorares](https://github.com/sidorares), [twitter@sidorares](http://twitter.com/sidorares)), 
+Julián Duque ([github/julianduque](https://github.com/julianduque), [twitter@julian_duque](http://twitter.com/julian_duque)), 
+Lars-Magnus Skog ([github/ralphtheninja](https://github.com/ralphtheninja), [twitter@ralphtheninja](http://twitter.com/ralphtheninja)), 
+Tim Inman ([github/thehack](https://github.com/thehack), [twitter@timinman](http://twitter.com/timinman)), 
+Dan Flettre ([github/Flet](https://github.com/Flet), [twitter@flettre](http://twitter.com/flettre)) 
+
+##Donations
+If you feel you have benefitted from this or the other tutorials, how about [donating to Rodd Vagg using gittip](https://www.gittip.com/rvagg/)

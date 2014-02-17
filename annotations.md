@@ -11,7 +11,7 @@ Git isn't like other programs on your computer. You'll likely not see an icon on
   
 Once it is installed, open terminal (aka Bash, aka Shell, aka Prompt). You can verify that it's really there by typing:
   
-    $ git -v 
+    $ git --version
   
 This will return the version of Git that you're running.
   
@@ -32,7 +32,11 @@ Now set your email:
 
 When you're done type into terminal:
 
-    $ git-it verify 
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
 
 **PRO TIP**: Dollar signs are often used in programming documentation to signify that the line is command line code. You don't actually type it in, though, only type `git-it verify`.
   
@@ -68,8 +72,13 @@ To create a new Git instance for a project:
 That's it! It will just return you to a new line.
   
 When you've initialized a new Git repository, run:
-  
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
     $ git-it verify
+  
   
 ###TERMINAL TIPS
 Make a new folder (aka directory)
@@ -120,7 +129,13 @@ In terminal, you can view the **diff**erence between the file now and how it was
   
 Now with what you just learned above, commit this latest change.
   
-When all changes are committed, run `git-it verify`.
+When all changes are committed, 
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
   
 ##Git Tips
 Check status of changes to a repository
@@ -162,7 +177,13 @@ Add your GitHub username to your configuration:
   
     $ git config --global user.username githubusername
 
-When you've set everything up, run `git-it verify`
+When you've set everything up, 
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
 
 
 @annotation:tour remote_control
@@ -223,6 +244,10 @@ Now go to GitHub and refresh the page of your repository. WOAH! Everything is th
 
 When you're synced locally and on GitHub.com, run:
 
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
     $ git-it verify
 
 ##GIT TIPS
@@ -280,7 +305,13 @@ You can name this remote connection anything you want, but often people use 'ups
 
     $ git remote add upstream https://github.com/jlord/patchwork.git
   
-When you've done these steps, run `git-it verify`.
+When you've done these steps, 
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
   
 ##GIT TIPS
 Add remote connections
@@ -331,9 +362,15 @@ Go through the steps for checking in a project:
 
 Now push your update to your fork on GitHub:
 
-    $ git push origin <BRANCHNAME>
+    $ git push 
+    
+When you have done, type into terminal:
 
-Type `git-it verify` when you're done.
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify` when you're done.
 
 
 ##GIT TIPS
@@ -379,7 +416,13 @@ Go to the your forked Patchwork repository's page on GitHub and add 'reporobot' 
 
     http://www.github.com/yourusername/patchwork
 
-When you've added Reporobot as a collaborator to your Patchwork fork, run `git-it verify`. 
+When you've added Reporobot as a collaborator to your repo, type into terminal:
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
 
 ##GIT TIPS
 Pull in changes from a remote
@@ -415,7 +458,13 @@ If nothing's changed, it will tell you 'Already up-to-date'. If there are change
 
 Did Reporobot make changes? Git tells you where changes were made. You can open that file and see Reporobot's updates. Surprise, Reporobot is an artist!
 
-When you've pulled, type `git-it verify`.
+When you're done type into terminal:
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
 
 ##GIT TIPS
 Check Git status
@@ -458,10 +507,14 @@ If everything good, and as you expect it:
 - Add a title and description to the changes you're suggesting the original author pull in.
 - click 'Send pull request'!
 
-High five! When you've submitted your pull request, take a few seconds to bask in the moment. Then see if your pull request is merged right before your eyes! If it is, you're golden, run:
+High five! When you've submitted your pull request, take a few seconds to bask in the moment. Then see if your pull request is merged right before your eyes! If it is, you're golden, when you're done type into terminal:
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
 
     $ git-it verify
-
+    
 If it's not merged automatically within a few moments, you'll then likely have some comments from Reporobot on why it couldn't merge it. If so, close your pull request on GitHub.com, make the necessary
 changes to your branch, push those changes and resubmit your pull request.
 
@@ -499,7 +552,13 @@ And last but not least, if you pull in updates from the original (since it now s
 
     $ git pull upstream gh-pages
 
-When you've mereged your branch, deleted it and pulled form the original, run `git-it verify`.
+When you've mereged your branch, deleted it and pulled form the original, type into terminal:
+
+    $ git-it
+   
+To open the lesson menu. Select the lesson you are running and <Enter> and then
+
+    $ git-it verify
 
 ##GIT TIPS
 
