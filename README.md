@@ -4,9 +4,6 @@
 
 *All content is written and produced by [http://nodeschool.io](http://nodeschool.io). Please see the credits at the bottom of this page and if you have learnt a lot from these tutorials, please make a donation (also at the bottom).*
 
-#Video
-If you prefer a video rather than reading the instructions below, there is a video that runs through the Codio + Nodeschool.io system (yes, it's a tutorial on how to use the tutorial) : [https://vimeo.com/86100550](https://vimeo.com/86100550)
-
 #Installation
 1. Create an account with http://codio.com (don't be frightened, it's free for all public projects).
 1. You're probably looking at this in GitHub already but if not, go to [https://github.com/codio](https://github.com/codio) and search for "Nodeschool", then select the tutorial you want.
@@ -20,18 +17,17 @@ You'll now need to install the Nodeschool tutorial (each one is an npm package) 
 - Lazy Way: click on the "Install Git-it" menu item. Once installed, you can close that tab.
 
 
-#2 Writing your code
-There are two different ways you can use Codio to run the Nodeschool.io tutorials. You can switch between them at any time. The great thing is that your code is neatly organized into lessons that you can refer back to later.
+#Running this Tutorial
+Git-It has a different format to other Nodeschool.io tutorials. You don't write code, you use the terminal.
+
+###Details of the lesson requirements can be accessed in two ways:
 
 - **Tutorial Mode** : select the 'Tools->Tutorial' menu item. Each lesson is presented with a Code window on the left and the instructions on the right, which can be scrolled through and left in place while you code. You can navigate between lessons using the buttons above the instructions.
 - **Manual Mode** : open up the lessons folders and you will see a filename similar to the folder name. As this tutorial is all done in the terminal simply click on the blue icon in the gutter to open up the instructions popup.
 
+### Completing the Lessons in the Terminal
 
-#Testing your code
-Git-It has a different format to other Nodeschool.io tutorials. You don't write code, you use the terminal
-
-###1. Shell out to the Terminal
-You can open a Terminal window at any time by selecting the 'Tools->Terminal' menu item. Your terminal defaults to the `~/workspace` folder, which equates to the root of your Codio code project. It is here that you enter your commands
+You can open a Terminal window by selecting the 'Tools->Terminal' menu item or with the default shortcut Shift+Alt+T. Your terminal defaults to the `~/workspace` folder, which equates to the root of your Codio code project. It is here that you enter your commands
 
 #Verifying your code
 Once you think you have completed the challenge, enter `git-it` to view the Lesson menu. Use your arrow keys to select the appropriate lesson and <enter>. 
@@ -45,8 +41,6 @@ As you verify and pass each lesson (or by entering `git-it` in the command line 
 
 ![Passed](stuff/completed.png)
 
-#Doing everything from the command line
-For this tutorial, you do everything from the command line rather than using Codio. Just open up the Terminal window from 'Tools->Terminal'.
 
 #Other Tutorials
 [http://nodeschool.io](http://nodeschool.io) has a several excellent tutorials. We have packaged these up so they run within Codio and the full set can be found on our [Nodeschool Tutorial page.](http://codio.com/tutorials)
