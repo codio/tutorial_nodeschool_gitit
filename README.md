@@ -41,7 +41,7 @@ Then enter `git-it verify`. The output will be shown in the console window. If i
 ![Passed](stuff/passed.png)
 
 #Which lessons have I successfully completed?
-As you verify and pass each lesson (or by entering `git-it` in the command line at any time, you will be shown in the console the list of all challenges that are already completed. You will see the following screen in the Terminal window hat appears. Completed lessons are clearly marked on the right.
+As you verify and pass each lesson (or by entering `git-it` in the command line at any time), you will be shown in the console the list of all challenges that are already completed. You will see the following screen in the Terminal window hat appears. Completed lessons are clearly marked on the right.
 
 ![Passed](stuff/completed.png)
 
