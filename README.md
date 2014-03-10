@@ -2,7 +2,8 @@
 #Tutorial 05 - Git-it
 **Learn Git and GitHub basics.**
 
-*All content is written and produced by [http://nodeschool.io](http://nodeschool.io). Please see the credits at the bottom of this page and if you have learnt a lot from these tutorials, please make a donation (also at the bottom).*
+###About the Author###
+This tutorial was written by [Jessica Lord](https://github.com/jlord). If you find this tutorial helpful and you'd like to say thanks to Jessica, why not [make a small donation here?](https://www.gittip.com/jlord)
 
 #Installation
 1. Create an account with http://codio.com (don't be frightened, it's free for all public projects).
