@@ -116,7 +116,7 @@ Then **add** the file you just created to the files you'd like to **commit** (ak
   
     $ git add <FILENAME>
 
-Finally, **commit** those changes to the repository's history with a short description of the updates.See the command hints below!
+Finally, **commit** those changes to the repository's history with a short description of the updates. See the command hints below!
   
     $ git commit -m "your commit message"
   
@@ -156,7 +156,7 @@ To add all files' changes
 
 To commit (aka save) the changes you've added with a short message describing the changes
 
-    $ git commit -m "your commit message"{/cyan}
+    $ git commit -m "your commit message"
 
 
 @annotation:tour githubbin
@@ -320,7 +320,7 @@ Add remote connections
   
 View remote connections
 
-    $ git remote -v{/cyan}
+    $ git remote -v
 
 
 @annotation:tour branches_arent_just_for_birds
@@ -362,16 +362,15 @@ Go through the steps for checking in a project:
 
 Now push your update to your fork on GitHub:
 
-    $ git push 
+    $ git push origin <BRANCHNAME>
     
 When you have done, type into terminal:
 
     $ git-it
-   
+
 To open the lesson menu. Select the lesson you are running and <Enter> and then
 
-    $ git-it verify` when you're done.
-
+    $ git-it verify
 
 ##GIT TIPS
 
@@ -397,7 +396,7 @@ Rename a branch you're currently on:
 
 Verify what branch you're working on
 
-    $ git status{/cyan}
+    $ git status
 
 
 @annotation:tour its_a_small_world
@@ -439,7 +438,7 @@ Add remote connections
 
 View remote connections
 
-    $ git remote -v{/cyan}
+    $ git remote -v
 
 
 @annotation:tour pull_never_out_of_date
@@ -473,11 +472,11 @@ Check Git status
 
 Pull in changes from a remote branch
 
-    $ git pull <REMOTENAME> <REMOTEBRANCH>{/cyan}
+    $ git pull <REMOTENAME> <REMOTEBRANCH>
 
 See changes to the remote before you pull in
 
-    $ git fetch --dry-run{/cyan}
+    $ git fetch --dry-run
 
 
 @annotation:tour requesting_you_pull_please
@@ -552,7 +551,7 @@ And last but not least, if you pull in updates from the original (since it now s
 
     $ git pull upstream gh-pages
 
-When you've mereged your branch, deleted it and pulled form the original, type into terminal:
+When you've merged your branch, deleted it and pulled form the original, type into terminal:
 
     $ git-it
    
@@ -580,5 +579,5 @@ Delete a remote branch
  
 Pull from a remote branch
 
-    $ git pull <REMOTENAME> <BRANCHNAME>{/cyan}
+    $ git pull <REMOTENAME> <BRANCHNAME>
 
