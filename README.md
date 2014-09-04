@@ -23,7 +23,7 @@ Git-It has a different format to other Nodeschool.io tutorials. You don't write 
 
 ###Details of the lesson requirements can be accessed in two ways:
 
-- **Tutorial Mode** : select the 'Tools->Tutorial' menu item. Each lesson is presented with a Code window on the left and the instructions on the right, which can be scrolled through and left in place while you code. You can navigate between lessons using the buttons above the instructions.
+- **Tutorial Mode** : select the 'Tools->Guides(Beta)>Play' menu item. Each lesson is presented with a Code window on the left and the instructions on the right, which can be scrolled through and left in place while you code. You can navigate between lessons using the buttons above the instructions.
 - **Manual Mode** : open up the lessons folders and you will see a filename similar to the folder name. As this tutorial is all done in the terminal simply click on the blue icon in the gutter to open up the instructions popup.
 
 ### Completing the Lessons in the Terminal
@@ -47,7 +47,7 @@ As you verify and pass each lesson (or by entering `git-it` in the command line 
 [http://nodeschool.io](http://nodeschool.io) has a several excellent tutorials. We have packaged these up so they run within Codio and the full set can be found on our [Nodeschool Tutorial page.](http://codio.com/tutorials)
 
 #Credits
-![Nodeschool](http://nodeschool.io/images/nodeschool.png)
+[![nodeschool-logo](stuff/nodeschool.png)](http://nodeschool.io)
 
 The Nodeschool tutorials are the much excellent work of the following hackers
 
